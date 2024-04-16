@@ -20,6 +20,11 @@ public class HelloController {
         return helloService.getHello();
     }
 
+    @GetMapping("/goodbye")
+    String getGoodbye() {
+        return helloService.getGoodbye();
+    }
+
     @GetMapping("/health")
     String health() {return "OK";}
 
