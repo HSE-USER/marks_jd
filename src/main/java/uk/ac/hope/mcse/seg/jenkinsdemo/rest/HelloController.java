@@ -20,4 +20,7 @@ public class HelloController {
         return helloService.getHello();
     }
 
+    @GetMapping("/health")
+    String health() {return "OK";}
+
 }
